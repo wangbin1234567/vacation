@@ -9,9 +9,6 @@ interface PropType {
 }
 
 const Hospital = (props: PropType) => {
-    console.log('====================================');
-    console.log(props);
-    console.log('》》》》》》》》》》》》》》》》》》》》》》');
     let that: any = window;
     useEffect(() => {
         new that.Highcharts.Map('map', {

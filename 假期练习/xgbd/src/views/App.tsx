@@ -51,14 +51,14 @@ const App = () => {
 
   return (
     <div className="App">
+      {/* 疫情概况 */}
+      <Header total={total as TotalType}/>
       {/* 疫情分布地图展示 */}
       <Map countryData={countryData}/>
       {/* 图表显示疫情 */}
       <Chart chinaDayAddList={dayAddList} chinaDayList={dayList}/>
       {/* 疫情速报 */}
       <News areaTree={areaTree.length?areaTree[0].children as AreaType[]:[]}/>
-      {/* 疫情概况 */}
-      <Header total={total as TotalType}/>
       {/* 疫情区域分布 */}
       <Area areaTree={areaTree}/>
       {/* 疫情的最新进展 */}
